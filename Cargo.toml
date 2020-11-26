@@ -3,6 +3,9 @@ name = "varint_bytes"
 version = "0.1.0"
 authors = ["Ben Aubin <ben@benaubin.com>"]
 edition = "2018"
+description = "Helper library for reading/writing variable length integers"
+license = "Unlicense"
+repository = "https://github.com/benaubin/varint_bytes"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
