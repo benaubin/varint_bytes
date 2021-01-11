@@ -70,7 +70,7 @@ macro_rules! varint {
                 for i in 0..MAX_BYTES.min(self.remaining()) {
                     let byte = self.get_u8();
                     
-                    num = num | (((byte & 0b01111111) as $ty) << (i * 7));
+                    num |= ((byte & 0b01111111) as $ty) << (i * 7);
 
                     let msb = byte & 0b10000000;
                     if msb == 0 { break }
